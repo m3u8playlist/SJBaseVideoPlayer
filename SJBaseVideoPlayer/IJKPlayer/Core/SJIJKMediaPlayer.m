@@ -242,7 +242,7 @@ typedef struct {
 @synthesize videoGravity = _videoGravity;
 - (void)setVideoGravity:(SJVideoGravity)videoGravity {
     _videoGravity = videoGravity;
-    IJKMPMovieScalingMode mode = IJKMPMovieScalingModeNone;
+    IJKMPMovieScalingMode mode = IJKMPMovieScalingModeAspectFit;
     if ( videoGravity == AVLayerVideoGravityResize )
         mode = IJKMPMovieScalingModeFill;
     else if ( videoGravity == AVLayerVideoGravityResizeAspect )
