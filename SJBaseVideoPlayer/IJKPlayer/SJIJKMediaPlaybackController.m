@@ -20,7 +20,7 @@
 #elif __has_include(<IJKMediaFrameworkWithSSL/IJKMediaFrameworkWithSSL.h>)
 #import <IJKMediaFrameworkWithSSL/IJKMediaFrameworkWithSSL.h>
 #else
-#import <PodIJKPlayer/PodIJKPlayer.h>
+#import <IJKMediaPlayerKit/IJKMediaPlayerKit.h>
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
