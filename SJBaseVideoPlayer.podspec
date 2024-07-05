@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name         = 'SJBaseVideoPlayer'
-  s.version      = '3.7.7.1'
+  s.version      = '3.7.7.2'
   s.summary      = 'video player.'
-  s.description  = 'https://github.com/changsanjiang/SJBaseVideoPlayer/blob/master/README.md'
-  s.homepage     = 'https://github.com/changsanjiang/SJBaseVideoPlayer'
+  s.description  = 'https://github.com/trial/SJBaseVideoPlayer/blob/master/README.md'
+  s.homepage     = 'https://github.com/trial/SJBaseVideoPlayer'
   s.license      = { :type => 'MIT', :file => 'LICENSE.md' }
   s.author       = { 'SanJiang' => 'changsanjiang@gmail.com' }
-  s.platform     = :ios, '12.0'
-  s.source       = { :git => 'https://github.com/changsanjiang/SJBaseVideoPlayer.git', :tag => "v#{s.version}" }
+  s.platform     = :ios, '14.0'
+  s.source       = { :git => 'https://github.com/trial/SJBaseVideoPlayer.git', :tag => "v#{s.version}" }
   s.frameworks  = "UIKit", "AVFoundation"
   s.requires_arc = true
 
@@ -35,31 +35,7 @@ Pod::Spec.new do |s|
       ss.dependency 'SJBaseVideoPlayer/Common'
       ss.libraries = 'z', 'c++'
   end
-  
-  s.subspec 'AliPlayer' do |ss|
-    ss.source_files = 'SJBaseVideoPlayer/AliPlayer/**/*.{h,m}'
-    ss.dependency 'AliPlayerSDK_iOS'
-    ss.dependency 'SJBaseVideoPlayer/Common'
-  end
-  
-  s.subspec 'AliVodPlayer' do |ss|
-      ss.source_files = 'SJBaseVideoPlayer/AliVodPlayer/**/*.{h,m}'
-      ss.dependency 'AliyunPlayer_iOS/AliyunVodPlayerSDK'
-      ss.dependency 'SJBaseVideoPlayer/Common'
-  end
-  
-  s.subspec 'PLPlayer' do |ss|
-    ss.source_files = 'SJBaseVideoPlayer/PLPlayer/**/*.{h,m}'
-    ss.dependency 'PLPlayerKit'
-    ss.dependency 'SJBaseVideoPlayer/Common'
-  end
-  
-  s.subspec 'KSYMediaPlayer' do |ss|
-    ss.source_files = 'SJBaseVideoPlayer/KSYMediaPlayer/**/*.{h,m}'
-    ss.dependency 'KSYMediaPlayer_iOS/KSYMediaPlayer_vod'
-    ss.dependency 'SJBaseVideoPlayer/Common'
-  end
-  
+
   s.dependency 'Masonry'
   s.dependency 'SJUIKit/AttributesFactory', '>= 0.0.0.38'
   s.dependency 'SJUIKit/ObserverHelper'
