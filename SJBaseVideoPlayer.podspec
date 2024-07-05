@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
   
   s.subspec 'IJKPlayer' do |ss|
       ss.source_files = 'SJBaseVideoPlayer/IJKPlayer/**/*.{h,m}'
-      ss.dependency 'PodIJKPlayer'
       ss.dependency 'SJBaseVideoPlayer/Common'
       ss.libraries = 'z', 'c++'
   end
