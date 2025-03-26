@@ -5,7 +5,7 @@ NS_ASSUME_NONNULL_BEGIN
 FOUNDATION_EXTERN NSErrorDomain const SJFSMediaPlayerErrorDomain;
 
 @interface SJFSMediaPlayer : NSObject<SJMediaPlayer>
-- (instancetype)initWithURL:(NSURL *)URL startPosition:(NSTimeInterval)startPosition options:(IJKFFOptions *)ops;
+- (instancetype)initWithURL:(NSURL *)URL startPosition:(NSTimeInterval)startPosition options:(FSOptions *)ops;
 
 @property (nonatomic, readonly, strong) NSURL *URL;
 
