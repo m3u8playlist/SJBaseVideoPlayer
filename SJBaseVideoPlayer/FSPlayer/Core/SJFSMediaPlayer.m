@@ -6,6 +6,7 @@
 //#else
 //#import <IJKMediaPlayerKit/IJKMediaPlayerKit.h>
 //#endif
+#import <FSPlayer/FSPlayerKit.h>
 #import "NSTimer+SJAssetAdd.h"
 
 NS_ASSUME_NONNULL_BEGIN
