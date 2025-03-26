@@ -14,7 +14,7 @@
 //#else
 //#import <IJKMediaPlayerKit/IJKMediaPlayerKit.h>
 //#endif
-
+#import <FSPlayer/FSPlayerKit.h>
 NS_ASSUME_NONNULL_BEGIN
 @interface SJFSMediaPlaybackController ()
 
